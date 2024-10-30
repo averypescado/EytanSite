@@ -1,9 +1,22 @@
+"use client"
+
 import Image from "next/image";
 import styles from "./page.module.css";
 import Header from "./Header";
 import Menu from "./Menu";
+import Mainstage from "./Mainstage";
+import React, { useState } from 'react';
+
+
+
 
 export default function Home() {
+  const [proj, setProj] = useState("R word");
+
+  const adjustment= (enter) => {
+    setProj(enter)
+  }
+
   return (
     <div className={styles.page}>
       <main className={styles.main}>
@@ -12,20 +25,10 @@ export default function Home() {
 
         </div>
       <div className={styles.meat}>
-        <Menu />
-        <div className={styles.content}>
-          <div>Dsecription</div>
-          <div className={styles.videoContainer}>
-            <iframe 
-              className={styles.videoframe}
-              src="https://www.youtube.com/embed/iNHRw8nvm28"
-              title="YouTube video player"
-              frameBorder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              allowFullScreen
-            />
-          </div>
-        </div>
+        <Menu action={adjustment}/>
+        <Mainstage project={proj}/>
+
+
       </div>
 
       </main>
