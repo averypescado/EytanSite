@@ -1,6 +1,11 @@
 import styles from "./page.module.css";
 
-export default function Mainstage({project}) {
+interface MainstageProps {
+    project: string;  // or use a more specific type like enum if you have fixed values
+  }
+
+
+export default function Mainstage({ project }: MainstageProps) {
     switch(project) {
         case "R word":
             return (

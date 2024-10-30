@@ -1,6 +1,5 @@
 "use client"
 
-import Image from "next/image";
 import styles from "./page.module.css";
 import Header from "./Header";
 import Menu from "./Menu";
@@ -10,10 +9,12 @@ import React, { useState } from 'react';
 
 
 
+
+
 export default function Home() {
   const [proj, setProj] = useState("R word");
 
-  const adjustment= (enter) => {
+  const adjustment= (enter: string) => {
     setProj(enter)
   }
 
