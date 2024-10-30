@@ -12,7 +12,7 @@ export default function Header() {
                 Jefe
             </div>
             <div>
-            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, 
 when an unknown printer took a galley of type and scrambled it 
             </div>
             <div className={styles.contact}>CONTACT INFO<br></br>
@@ -24,6 +24,7 @@ when an unknown printer took a galley of type and scrambled it
                 <Image
                     src={headshot}
                     width= {162}
+                    alt="headshot"
                 />
 
 
