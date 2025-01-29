@@ -9,7 +9,6 @@ const supabase = createClient(
 
 export default function Gallery() {
   const [imageUrl, setImageUrl] = useState('')
-  const [error, setError] = useState('')
 
   useEffect(() => {
     // Get direct public URL for im1.png
@@ -25,7 +24,6 @@ export default function Gallery() {
 
   return (
     <div className="p-4">
-      {error && <p className="text-red-500">{error}</p>}
       {imageUrl && (
         <div>
           <img 
