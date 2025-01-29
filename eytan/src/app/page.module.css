@@ -61,13 +61,13 @@
 .headshot{
   text-align:right;
   display: flex;
-  justify-content: space-between;
+  justify-content: right;
 }
 
 .back{
   padding:4px;
   border:1px solid black;
-  height:24px;
+  margin:4px;
 }
 
 

@@ -34,13 +34,13 @@ export default function Header({ project, onOpenSelf }: HeaderProps) {
                 Instagram.com/eytan
             </div>
             
-            {project !== 'begin' && (
-                <div className={styles.headshot}>
-                    <div>
-                        <button className={styles.back} onClick={flip}>{direct ? 'see back' : 'see front'} </button>
-                        <button className={styles.back} onClick={onOpenSelf}> Selfies</button>
-                        <button className={styles.back} onClick={flip}> Good pics</button>
-                    </div>
+            <div className={styles.headshot}>
+                <div>
+                    {project !== 'begin' && (<button className={styles.back} onClick={flip}>{direct ? 'see back' : 'see front'} </button> )}
+                    <button className={styles.back} onClick={onOpenSelf}> Selfies</button>
+                    <button className={styles.back} onClick={flip}> Good pics</button>
+                </div>
+                {project !== 'begin' && (
                     <div>
                         <Image
                             src={direct ? headshot : back}
@@ -48,8 +48,9 @@ export default function Header({ project, onOpenSelf }: HeaderProps) {
                             alt="headshot"
                         />
                     </div>
-                </div>
-            )}
+                )}
+            </div>
+            
         </div>
     )
 }
