@@ -4,7 +4,6 @@ import poster from "./poster.jpg";
 import headshot from "./headshot.png";
 import periodical from "./periodical.png"
 import back from "./back.png"
-import { Document, Page, pdfjs } from 'react-pdf';
 
 interface MainstageProps {
     project: string;  // or use a more specific type like enum if you have fixed values
@@ -90,7 +89,7 @@ export default function Mainstage({ project }: MainstageProps) {
             return (
                 <div className={styles.content}>
                     <div className={styles.describe}>Hoop Dreams 3D:<br></br>
-                        The sequel to Hoop Dreams 2. Liam's priorities shift from basketball to his new passion: acting. Eytan sets out to document his friend's journey, this time keen on authority and control. 2024. Co-directed, written, and starring with Liam Klinkenberg. 
+                        The sequel to Hoop Dreams 2. Liam&apos;s priorities shift from basketball to his new passion: acting. Eytan sets out to document his friend&apos;s journey, this time keen on authority and control. 2024. Co-directed, written, and starring with Liam Klinkenberg. 
                     </div>
                         <div className={styles.videoContainer}>
                             <iframe 
