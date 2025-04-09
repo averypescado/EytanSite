@@ -1,0 +1,8 @@
+.flex{
+    display: flex;
+    grid-gap:24px;
+}
+
+.kids{
+    flex: 1;
+}
