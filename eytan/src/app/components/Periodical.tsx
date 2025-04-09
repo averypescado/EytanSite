@@ -1,6 +1,6 @@
 import styles from '../page.module.css';
 import Image from 'next/image';
-import React, { useState } from 'react';
+import React from 'react';
 import Link from 'next/link';
 import periodical from '../periodical.png'
 

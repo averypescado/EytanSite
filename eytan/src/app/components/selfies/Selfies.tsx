@@ -81,7 +81,7 @@ export default function Selfies({ onCloseSidesheet }: SelfiesProps) {
       > 
       Close
       </button>
-      Due to some backdoor deals I'm not at liberty to discuss publicly (or privately), I get an entire Instagram story all to myself! I try to post a picture of myself smiling on there every day. Some days there are things going on that cause me to not do it, such as the breaking out of a devastating war or when I get struck by the cruel tormentor of forgetfulness. Right in the head it strikes me. Leaves me with a black eye and all, the whole thing.
+      Due to some backdoor deals I&apos;m not at liberty to discuss publicly (or privately), I get an entire Instagram story all to myself! I try to post a picture of myself smiling on there every day. Some days there are things going on that cause me to not do it, such as the breaking out of a devastating war or when I get struck by the cruel tormentor of forgetfulness. Right in the head it strikes me. Leaves me with a black eye and all, the whole thing.
         <ul className={styles.list}>
         {selfies.map((selfie) => (
           <li key={selfie._id} style={{ marginBottom: "20px" }}>

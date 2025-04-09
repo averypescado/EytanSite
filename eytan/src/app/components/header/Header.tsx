@@ -1,7 +1,5 @@
 import styles from "./Header.module.css";
 import Image from 'next/image';
-import back from "./back.png"
-import Link from "next/link";
 import initial from "../../BOH.jpg"
 
 
@@ -24,7 +22,7 @@ export default function Header({ onOpenSidesheet }: HeaderProps ) {
                 Jefe
             </div>
             <div>
-            Welcome to the website of Eytan Raul Boclin. This is the website of a man, yes, but it is also the website of a comedian, writer, director, and son. Littered all around this webpage you will find work by and information about this young man (read: I'm 11). Click around, enjoy yourself. I don't bite. Actually I do bite (rage issues) but I can't bite you through the computer. So let me take that again. Click around, enjoy yourself. I bite, but you don't have to worry about that since you're where you are and I'm where I am (Los Angeles). 
+            Welcome to the website of Eytan Raul Boclin. This is the website of a man, yes, but it is also the website of a comedian, writer, director, and son. Littered all around this webpage you will find work by and information about this young man (read: I &apos;m 11). Click around, enjoy yourself. I don&apos;t bite. Actually I do bite (rage issues) but I can&apos;t bite you through the computer. So let me take that again. Click around, enjoy yourself. I bite, but you don&apos;t have to worry about that since you&apos;re where you are and I&apos;m where I am (Los Angeles). 
             </div>
             <div className={styles.contact}>
                 Reps<br />
