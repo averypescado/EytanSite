@@ -14,7 +14,6 @@ export default function Layout({ children }: { children: React.ReactNode }) {
     const pathname = usePathname();
     
     // Check if we're on the /work page or a project page
-    const isWorkLandingPage = pathname === "/work";
     const isWorkProjectPage = pathname.startsWith('/work/') && pathname !== "/work";
     
     // Check screen width on mount and when window resizes
