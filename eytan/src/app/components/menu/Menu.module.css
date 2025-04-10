@@ -1,19 +1,25 @@
-.project{
-    border-bottom:1px solid black;
-    padding-top:12px;
-    padding-bottom: 12px;
-    user-select: none;
-  }
-  
-  .project:hover{
-    background-color:#FDFFBC;
-    font-style: italic;
-    cursor: pointer;
-  }
+.project {
+  border-bottom: 1px solid black;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  user-select: none;
+}
 
-  .list{
-    list-style-type: none;
-    margin:0;
-    width:200px;
+.project:hover {
+  background-color: #FDFFBC;
+  font-style: italic;
+  cursor: pointer;
+}
+
+.list {
+  list-style-type: none;
+  margin: 0;
+  width: 200px;
+}
+
+/* Add a media query for mobile */
+@media (max-width: 768px) {
+  .list.fullWidth {
+    width: 100% !important;
   }
-  
+}

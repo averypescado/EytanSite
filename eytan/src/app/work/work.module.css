@@ -1,8 +1,73 @@
-.flex{
-    display: flex;
-    grid-gap:24px;
-}
+/* Updated work.module.css with more explicit full-width styles */
 
-.kids{
+.flex {
+    display: flex;
+    width: 100%;
+  }
+  
+  .menuContainer {
+    width: 250px; /* Default width for desktop */
+  }
+  
+  .menu {
+    /* Any styles specific to the menu itself */
+  }
+  
+  .kids {
     flex: 1;
-}
+    position: relative;
+    width: calc(100% - 250px); /* Default width for desktop */
+  }
+  
+  /* Close button (X) for mobile */
+  .closeButton {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    z-index: 100;
+    text-decoration: none;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+  }
+  
+  .closeX {
+    font-size: 28px;
+    line-height: 1;
+    color: #333;
+  }
+  
+  /* Mobile layout styles */
+  @media (max-width: 768px) {
+    .mobileLayout {
+      flex-direction: column;
+    }
+    
+    .fullWidthMenu {
+      width: 100% !important;
+      max-width: 100% !important;
+      flex: 1;
+      border-right: none;
+    }
+    
+    .fullWidthContent {
+      width: 100% !important;
+      max-width: 100% !important;
+      min-height: 100vh; /* Ensure it takes full height on mobile */
+      padding-top: 50px; /* Space for the X button */
+    }
+    
+    /* When in mobile mode, ensure the menu container takes up the whole viewport */
+    .mobileLayout .menuContainer {
+      width: 100% !important;
+    }
+    
+    /* When in mobile mode, ensure the content area takes up the whole viewport */
+    .mobileLayout .kids {
+      width: 100% !important;
+    }
+  }

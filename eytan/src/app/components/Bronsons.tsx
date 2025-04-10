@@ -1,7 +1,7 @@
 import styles from '../page.module.css';
 import React from 'react';
 
-export default function Brosons()
+export default function Bronsons()
 {
     return (
         <div className={styles.content}>

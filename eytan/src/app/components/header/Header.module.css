@@ -15,3 +15,8 @@
     justify-content: right;
     gap: 24px;
   }
+
+  .contactbut{
+    position: absolute;
+    right:24px;
+  }
