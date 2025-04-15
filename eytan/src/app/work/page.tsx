@@ -1,7 +1,8 @@
+import styles from './work.module.css';
 export default function hoop() {
     return (
-        <div>
-            Click one bitch
+        <div className={styles.empty}>
+            ← Choose a project
     
         </div>
     )

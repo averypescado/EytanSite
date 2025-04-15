@@ -6,7 +6,7 @@ export default function Standup()
     return (
         <div className={styles.content}>
 
-        <div className={styles.describe}>Standup Clips<br></br>
+        <div className={styles.describe}>
         Opening for Natalie Rotter-Laitman at Dynasty Typewriter 
         </div>
             <div className={styles.videoContainer}>
@@ -19,7 +19,7 @@ export default function Standup()
               />
             </div>
             <div className={styles.describe}>
-        Clip Number 2
+        Heat Wave 3.13
         </div>
             <div className={styles.videoContainer}>
                 <iframe 

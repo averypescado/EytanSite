@@ -33,3 +33,14 @@
     top:0px;
     right:0px;
 }
+
+.closebut{
+    right:24px;
+    padding: 8px 16px;
+    background-color: transparent;
+    border: 1px solid darkgrey;
+    cursor: pointer;
+    font-size: 14px;
+    transition: all 0.2s ease;
+    color: black
+  }

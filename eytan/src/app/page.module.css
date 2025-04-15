@@ -115,7 +115,9 @@ a.secondary {
   overflow: scroll;
   justify-content: center;
   width:100%;
+  
 }
+
 
 .videoContainer {
   position: relative;
@@ -236,31 +238,26 @@ a.secondary {
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
-.holder{
+.holder {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width:100vw;
+  width: 100%; /* Use 100% instead of 100vw */
+  max-width: 100%; /* Ensure it doesn't exceed viewport */
+  overflow-x: hidden; /* Prevent horizontal scrolling */
 }
 
-.bio{
-  /* position: absolute;
-  top: 20px;
-  left: 50%;
-  transform: translate(-50%); */
-  max-width:700px;
+.bio {
+  max-width: 700px;
   font-size: 18px;
-  padding:16px;
-  font-family:monospace;
-  border-radius: 8px;
-}
-
-.head{
-  /* position: absolute;
-  bottom:0;
-  left: 50%;
-  transform: translate(-50%); */
+  padding: 16px;
+  white-space: normal;
+  overflow-wrap: break-word;
+  word-wrap: break-word; /* For IE support */
+  word-break: break-word; /* For better word breaking */
+  width: 100%; /* Make sure it doesn't exceed container width */
+  box-sizing: border-box; /* Include padding in width calculation */
 }
 
 .button{

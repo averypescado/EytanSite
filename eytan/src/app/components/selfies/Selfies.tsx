@@ -78,6 +78,7 @@ export default function Selfies({ onCloseSidesheet }: SelfiesProps) {
 
       <button
           onClick={onCloseSidesheet} 
+          className={styles.closebut}
       > 
       Close
       </button>

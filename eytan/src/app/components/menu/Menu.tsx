@@ -36,6 +36,9 @@ export default function Menu({ className}: MenuProps ) {
             <Link href="/work/bronsons">
                 <li className={styles.project}>Bronsons Honey</li>
             </Link>
+            <Link href="/work/namepoem">
+                <li className={styles.project}>Name Poem</li>
+            </Link>
         </ul>
     )
 }

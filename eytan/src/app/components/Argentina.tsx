@@ -6,7 +6,7 @@ export default function Argentina()
     return (
         <div className={styles.content}>
         <div className={styles.describe}>Hoop Dreams 3D:<br></br>
-            The sequel to Hoop Dreams 2. Liam&apos;s priorities shift from basketball to his new passion: acting. Eytan sets out to document his friend&apos;s journey, this time keen on authority and control. 2024. Co-directed, written, and starring with Liam Klinkenberg. 
+        Argentinean Soccer Announcer Looking At A Tree
         </div>
             <div className={styles.videoContainer}>
             <video 
