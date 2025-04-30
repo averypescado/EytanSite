@@ -63,7 +63,7 @@ export default function Header({ onOpenSidesheet, onOpenHeadshot }: HeaderProps 
             </div>
            {!isMobile &&
            <div>
-            Welcome to the website of Eytan Raul Boclin. Click around, I don't bite. You know what I actually do bite (I'm very territorial) but either way it’s fine since I can't bite you through the computer. So let me take that again. Click around, I bite, but you don't have to worry about that since you're safe since I'm not in the same place as you.  </div> } 
+            Welcome to the website of Eytan Raul Boclin. Click around, I don&apos;t bite. You know what I actually do bite (I&apos;m very territorial) but either way it&apos;s fine since I can&apos;t bite you through the computer. So let me take that again. Click around, I bite, but you don&apos;t have to worry about that since you&apos;re safe since I&apos;m not in the same place as you.  </div> } 
             
             {/* Contact info shown on desktop */}
             {!isMobile && 

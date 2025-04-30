@@ -7,7 +7,7 @@ export default function Toyota()
         <div className={styles.content}>
 
         <div className={styles.describe}>
-        Getting to the bottom of Toyota's domination of LA's streets. Made with Ben Gauthier</div>
+        Getting to the bottom of Toyota&apos;s domination of LA&apos;s streets. Made with Ben Gauthier</div>
             <div className={styles.videoContainer}>
                 <iframe 
                     className={styles.videoframe}
