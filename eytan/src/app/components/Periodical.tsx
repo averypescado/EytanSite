@@ -8,24 +8,31 @@ export default function Periodical()
 {
     return (
         <div className={styles.content}>
-        <div className={styles.describe}>Periodical
-        :<br></br>
+        <div className={styles.describe}>
         A zine I ran via email and leaving print copies in coffee shops around New York and LA. In the last issue, super-director Damien Chazelle buys the zine and turns it into multi-media conglomerate Periodical Inc, Incorporated. Replete with a website befitting any international corporation.
 
-</div>
+        </div>
             <div className={styles.videoContainer}>
-                <Image
-                
-                    src={periodical}
-                    width={1600}
-                    height={900}
-                    alt="Poster"
-                    style={{
-                        width: '100%',
-                        height: 'auto',
-                        objectFit: 'contain'
-                    }}
-                />  
+            <Link 
+                href="https://www.periodicalincinc.com/" 
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                <div className={styles.overlay}>
+                    <div className={styles.label}>Go to website</div>
+                </div>
+    <Image
+        src={periodical}
+        width={1600}
+        height={900}
+        alt="Poster"
+        style={{
+            width: '100%',
+            height: 'auto',
+            objectFit: 'contain'
+        }}
+    />  
+    </Link>
             </div>
             <div className={styles.periodicals}>
             <Link 
@@ -38,7 +45,7 @@ export default function Periodical()
                   }}
             >
                 <div className={styles.overlay} />
-                <span className={styles.label}>Issue 1</span>
+                <span className={styles.label}>Go to issue 1</span>
             </Link>
             
             <Link 
@@ -51,7 +58,7 @@ export default function Periodical()
                   }}
             >
                 <div className={styles.overlay} />
-                <span className={styles.label}>Issue 2</span>
+                <span className={styles.label}>Go to issue 2</span>
             </Link>
 
             <Link 
@@ -64,7 +71,8 @@ export default function Periodical()
                   }}
             >
                 <div className={styles.overlay} />
-                <span className={styles.label}>Issue 3</span>
+                <span className={styles.label}>Go to issue 3</span>
+
             </Link>
 
             

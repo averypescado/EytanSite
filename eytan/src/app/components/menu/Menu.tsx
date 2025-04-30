@@ -15,14 +15,17 @@ export default function Menu({ className}: MenuProps ) {
                 </li>
             </Link>
 
-            <Link href="/work/hoopdreams3">
+            <Link href="/work/hoopdreams3D">
                 <li className={styles.project}>Hoop Dreams 3D</li>
             </Link>
             
             <Link href="/work/rword">
                 <li className={styles.project}>The R word is Back</li>
             </Link>
-            <li className={styles.project}>Toyota Problem</li>
+            <Link href="/work/TheToyotaProblem">
+                <li className={styles.project}>The Toyota Problem</li>
+            </Link>
+            
             <Link href="/work/standup">
                 <li className={styles.project}>Standup</li>
             </Link>
@@ -38,6 +41,12 @@ export default function Menu({ className}: MenuProps ) {
             </Link>
             <Link href="/work/namepoem">
                 <li className={styles.project}>Name Poem</li>
+            </Link>
+            <Link href="/work/kramer">
+                <li className={styles.project}>Remember Kramer? From Seinfeld?</li>
+            </Link>
+            <Link href="/work/betterman">
+                <li className={styles.project}>Better Man Screenplay</li>
             </Link>
         </ul>
     )

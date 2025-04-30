@@ -12,7 +12,7 @@ export default function Standup()
             <div className={styles.videoContainer}>
               <iframe 
                   className={styles.videoframe}
-                  src="https://www.youtube.com/embed/GeFLF0mkpK4?si=GpirxnV79nX9D4tw&controls=0&modestbranding=1&rel=0&showinfo=0"
+                  src="https://www.youtube.com/embed/GeFLF0mkpK4?si=GpirxnV79nX9D4tw&modestbranding=1&rel=0&showinfo=0&start=157"
                   title="YouTube video player"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                   allowFullScreen

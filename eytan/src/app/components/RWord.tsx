@@ -6,8 +6,8 @@ export default function RWord()
     return (
         <div className={styles.content}>
 
-        <div className={styles.describe}>The R Word Is Back:<br></br>
-        Investigating the resurgence of the R word -- retail. Made with Ben Gauthier.</div>
+        <div className={styles.describe}>
+        Investigating the resurgence of the R word -- retail.</div>
             <div className={styles.videoContainer}>
                 <iframe 
                     className={styles.videoframe}

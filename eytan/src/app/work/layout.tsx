@@ -2,6 +2,7 @@
 
 import styles from "./work.module.css";
 import Selfies from "../components/selfies/Selfies";
+import Headshot from "../components/headshot/Headshot";
 import { useState, useEffect } from "react";
 import { usePathname } from "next/navigation";
 import Link from "next/link";
@@ -9,7 +10,8 @@ import Header from "../components/header/Header";
 import Menu from "../components/menu/Menu"; // Adjust import path as needed
 
 export default function Layout({ children }: { children: React.ReactNode }) {
-    const [sidesheetOpen, setSidesheetOpen] = useState(false);
+    const [selfiesheetOpen, setSelfiesheetOpen] = useState(false);
+    const [headshotsheetOpen, setHeadshotsheetOpen] = useState(false);
     const [isMobile, setIsMobile] = useState(false);
     const pathname = usePathname();
     
@@ -34,8 +36,14 @@ export default function Layout({ children }: { children: React.ReactNode }) {
     
     return (
         <div>
-            {sidesheetOpen && <Selfies onCloseSidesheet={() => setSidesheetOpen(false)} />}
-            <Header onOpenSidesheet={() => setSidesheetOpen(true)} />
+            {selfiesheetOpen && <Selfies onCloseSidesheet={() => setSelfiesheetOpen(false)} />}
+            {headshotsheetOpen && <Headshot onCloseSidesheet={() => setHeadshotsheetOpen(false)} />}
+            <Header 
+                onOpenSidesheet={() => setSelfiesheetOpen(true)}
+                onOpenHeadshot={() => setHeadshotsheetOpen(true)}
+                
+        
+            />
             
             <div className={`${styles.flex} ${isMobile ? styles.mobileLayout : ''}`}>
                 {/* Always show Menu on desktop, or on mobile when on landing page */}

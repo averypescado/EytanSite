@@ -5,7 +5,7 @@ export default function HoopDreams2()
 {
     return (
         <div className={styles.content}>
-        <div className={styles.describe}>Hoop Dreams 2:<br></br>
+        <div className={styles.describe}>
         Mockumentary about a young man who, after surviving a coma suffered on a construction site, uses his new lease on life to embark on a quixotic journey: playing in the NBA. 2020. Co-directed with Liam Klinkenberg. 
 
         </div>

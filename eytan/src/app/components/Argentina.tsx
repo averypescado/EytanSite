@@ -5,7 +5,7 @@ export default function Argentina()
 {
     return (
         <div className={styles.content}>
-        <div className={styles.describe}>Hoop Dreams 3D:<br></br>
+        <div className={styles.describe}>
         Argentinean Soccer Announcer Looking At A Tree
         </div>
             <div className={styles.videoContainer}>

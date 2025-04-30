@@ -68,9 +68,7 @@ export default function Selfies({ onCloseSidesheet }: SelfiesProps) {
     fetchData();
   }, []);
 
-  if (loading) return <div>Loading selfies...</div>;
-  if (error) return <div>Error: {error}</div>;
-  if (!selfies.length) return <div>No selfies found</div>;
+
 
   return (
     <div className={styles.wrapper}>
@@ -83,7 +81,13 @@ export default function Selfies({ onCloseSidesheet }: SelfiesProps) {
       Close
       </button>
       Due to some backdoor deals I&apos;m not at liberty to discuss publicly (or privately), I get an entire Instagram story all to myself! I try to post a picture of myself smiling on there every day. Some days there are things going on that cause me to not do it, such as the breaking out of a devastating war or when I get struck by the cruel tormentor of forgetfulness. Right in the head it strikes me. Leaves me with a black eye and all, the whole thing.
-        <ul className={styles.list}>
+      {loading ? (
+          <div>Loading selfies...</div>
+        ) : error ? (
+          <div>Error: {error}</div>
+        ) : !selfies.length ? (
+          <div>No selfies found</div>
+        ) : <ul className={styles.list}>
         {selfies.map((selfie) => (
           <li key={selfie._id} style={{ marginBottom: "20px" }}>
             {selfie.publishedAt && (
@@ -100,7 +104,8 @@ export default function Selfies({ onCloseSidesheet }: SelfiesProps) {
             )}
           </li>
         ))}
-        </ul>
+        </ul> 
+}
         </div>
     </div>
   );

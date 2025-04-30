@@ -36,7 +36,8 @@
   cursor: pointer;
   font-size: 14px;
   transition: all 0.2s ease;
-  color: black
+  color: black;
+  margin-bottom:8px;
 }
 
 .contactbut:hover {
