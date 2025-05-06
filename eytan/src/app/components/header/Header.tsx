@@ -11,6 +11,8 @@ interface HeaderProps {
 export default function Header({ onOpenSidesheet, onOpenHeadshot }: HeaderProps ) {
     const [isMobile, setIsMobile] = useState(false);
     const [showContactPopover, setShowContactPopover] = useState(false);
+    const [isPlaying, setIsPlaying] = useState(false);
+    const videoRef = useRef<HTMLVideoElement>(null);
     const popoverRef = useRef<HTMLDivElement>(null);
     const buttonRef = useRef<HTMLButtonElement>(null);
 
@@ -54,12 +56,37 @@ export default function Header({ onOpenSidesheet, onOpenHeadshot }: HeaderProps 
         setShowContactPopover(!showContactPopover);
     };
 
+    const toggleVideo = () => {
+        if (videoRef.current) {
+            if (isPlaying) {
+                videoRef.current.pause();
+            } else {
+                videoRef.current.play();
+            }
+            setIsPlaying(!isPlaying);
+        }
+    };
+
     return (
         <div className={styles.header}>
             <div>
                 Eytan Boclin
                 <br />
-                Jefe
+                <button 
+                    className={styles.videoButton}
+                    onClick={toggleVideo}
+                    aria-label="Play video"
+                >
+                    {isPlaying ? '⏸' : '▶'}
+                </button>
+                {/* Hidden video element */}
+                <video 
+                    ref={videoRef}
+                    className={styles.videoPlayer}
+                    src="/Name.m4a"
+                    onEnded={() => setIsPlaying(false)}
+                    playsInline
+                    />
             </div>
            {!isMobile &&
            <div>

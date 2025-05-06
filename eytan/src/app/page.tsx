@@ -14,6 +14,7 @@ export default function Home() {
          <div className={styles.introduction}>Eytan Raul Boclin </div>
           <Link 
             href="/work/hoopdreams2"
+            className={styles.linkContainer}
           >
             <button className={styles.button}>
               You only got one choice
