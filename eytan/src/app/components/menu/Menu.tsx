@@ -18,7 +18,7 @@ export default function Menu({ className}: MenuProps ) {
                 <li className={styles.project}>Hoop Dreams 3D</li>
             </Link>
 
-            <Link href="/work/thetoyotatroblem">
+            <Link href="/work/thetoyotaproblem">
                 <li className={styles.project}>The Toyota Problem</li>
             </Link>
             
