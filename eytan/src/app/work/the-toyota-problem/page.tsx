@@ -1,4 +1,4 @@
-import Toyota from "@/app/components/toy"
+import Toyota from "@/app/components/Toyota"
 
 
 export default function hoop() {
