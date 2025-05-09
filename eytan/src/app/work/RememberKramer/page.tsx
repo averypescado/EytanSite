@@ -1,4 +1,4 @@
-import Kramer from "@/app/components/kramer"
+import Kramer from "@/app/components/kra"
 
 export default function per() {
     return (
