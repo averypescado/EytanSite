@@ -1,4 +1,4 @@
-import Bronsons from "@/app/components/Bronsons"
+import Bronsons from "@/app/components/brons"
 
 
 export default function hoop() {

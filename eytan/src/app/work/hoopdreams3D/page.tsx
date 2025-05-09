@@ -1,4 +1,4 @@
-import HoopDreamsD from "@/app/components/HoopdreamsD"
+import HoopDreamsD from "@/app/components/hd3"
 
 
 export default function hoop() {

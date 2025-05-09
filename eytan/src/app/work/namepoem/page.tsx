@@ -1,4 +1,4 @@
-import NamePoem from "@/app/components/NamePoem"
+import NamePoem from "@/app/components/name"
 
 
 export default function hoop() {
