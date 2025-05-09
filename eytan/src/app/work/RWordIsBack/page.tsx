@@ -1,4 +1,4 @@
-import RWord from "@/app/components/rword"
+import RWord from "@/app/components/rw";
 
 
 export default function hoop() {

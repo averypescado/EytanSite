@@ -1,4 +1,4 @@
-import BetterMan from "@/app/components/bettermanscreenplay"
+import BetterMan from "@/app/components/betterman";
 
 export default function per() {
     return (
