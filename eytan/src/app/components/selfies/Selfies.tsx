@@ -90,11 +90,6 @@ export default function Selfies({ onCloseSidesheet }: SelfiesProps) {
         ) : <ul className={styles.list}>
         {selfies.map((selfie) => (
           <li key={selfie._id} style={{ marginBottom: "20px" }}>
-            {selfie.publishedAt && (
-              <p style={{ fontSize: "14px", color: "#666", marginBottom: "8px" }}>
-                {new Date(selfie.publishedAt).toLocaleDateString()}
-              </p>
-            )}
             {selfie.image && selfie.image.asset && (
               <img
                 src={selfie.image.asset.url}

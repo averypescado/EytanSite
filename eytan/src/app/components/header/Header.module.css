@@ -8,6 +8,19 @@
     padding-bottom:24px;
   }
 
+  .flex{
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    padding-top:8px;
+  }
+
+  .flex:hover{
+    opacity: 0.7;
+  }
+
+ 
+
   
 .headshot{
   text-align:right;
@@ -38,6 +51,10 @@
   transition: all 0.2s ease;
   color: black;
   margin-bottom:8px;
+}
+
+.selfiesbut:hover{
+  background-color: rgba(0, 0, 0, 0.05);
 }
 
 .contactbut:hover {
@@ -75,6 +92,19 @@
   color: #666;
   padding: 4px;
   line-height: 1;
+}
+
+.videoButton{
+  width:90px;
+  margin-top:4px;
+  cursor: pointer;
+  font-size: 14px;
+  background-color: rgb(233, 233, 233);
+  color: black;
+  transition: all 0.2s ease;
+  border:none;
+  padding:4px;
+  border-radius:4px;
 }
 
 .closePopover:hover {

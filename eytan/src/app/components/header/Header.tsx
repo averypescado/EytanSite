@@ -1,7 +1,8 @@
 import styles from "./Header.module.css";
-import Image from 'next/image';
-import initial from "../../BOH.jpg"
 import { useState, useEffect, useRef } from "react";
+import Link from 'next/link';
+import { FaInstagram } from "react-icons/fa";
+
 
 interface HeaderProps {
     onOpenSidesheet: () => void;
@@ -77,7 +78,7 @@ export default function Header({ onOpenSidesheet, onOpenHeadshot }: HeaderProps 
                     onClick={toggleVideo}
                     aria-label="Play video"
                 >
-                    {isPlaying ? '⏸' : '▶'}
+                    {isPlaying ? '⏸' : 'Im Eytan'}
                 </button>
                 {/* Hidden video element */}
                 <video 
@@ -90,7 +91,8 @@ export default function Header({ onOpenSidesheet, onOpenHeadshot }: HeaderProps 
             </div>
            {!isMobile &&
            <div>
-            Welcome to the website of Eytan Raul Boclin. Click around, I don&apos;t bite. You know what I actually do bite (I&apos;m very territorial) but either way it&apos;s fine since I can&apos;t bite you through the computer. So let me take that again. Click around, I bite, but you don&apos;t have to worry about that since you&apos;re safe since I&apos;m not in the same place as you.  </div> } 
+           Welcome to the website of Eytan Raul Boclin. Click around, I don&apos;t bite. You know what I actually do bite (territorial) but either way it&apos;s fine because we&apos;re not in the same place.
+ </div> } 
             
             {/* Contact info shown on desktop */}
             {!isMobile && 
@@ -102,7 +104,14 @@ export default function Header({ onOpenSidesheet, onOpenHeadshot }: HeaderProps 
                     <hr/>
                     Me <br />
                     eytaboclin@gmail.com <br />
-                    https://www.instagram.com/eytanboclin
+                    <Link 
+                              href="https://www.instagram.com/eytanboclin/" 
+                              target="_blank" 
+                              rel="noopener noreferrer"
+                    >
+                        <div className={styles.flex}>@eytanboclin <FaInstagram size={20} className={styles.instagramIcon} /> </div>
+                    </Link>
+
                 </div>
             }
             
@@ -155,7 +164,7 @@ export default function Header({ onOpenSidesheet, onOpenHeadshot }: HeaderProps 
                         className={styles.selfiesbut}
                         onClick={onOpenSidesheet} 
                     > 
-                        Selfies
+                        Pictures of my face
                     </button>
                     <button 
                         className={styles.selfiesbut}
@@ -163,13 +172,6 @@ export default function Header({ onOpenSidesheet, onOpenHeadshot }: HeaderProps 
                     > 
                         Headshots
                     </button>
-                </div>
-                <div>
-                    <Image
-                        src={initial}
-                        height={142}
-                        alt="headshot"
-                    />
                 </div>
             </div>}
         </div>

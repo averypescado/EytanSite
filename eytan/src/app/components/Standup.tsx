@@ -6,7 +6,7 @@ export default function Standup()
     return (
         <div className={styles.content}>
 
-        <div className={styles.describe}>
+        {/* <div className={styles.describe}>
         Opening for Natalie Rotter-Laitman at Dynasty Typewriter 
         </div>
             <div className={styles.videoContainer}>
@@ -17,7 +17,7 @@ export default function Standup()
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                   allowFullScreen
               />
-            </div>
+            </div> */}
             <div className={styles.describe}>
         Heat Wave 3.13
         </div>
