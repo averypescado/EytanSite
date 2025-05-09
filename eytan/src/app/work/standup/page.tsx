@@ -1,4 +1,4 @@
-import Standup from "@/app/components/Standup"
+import Standup from "@/app/components/stand"
 
 
 export default function hoop() {
