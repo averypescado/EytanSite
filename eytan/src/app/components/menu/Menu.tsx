@@ -46,7 +46,7 @@ export default function Menu({ className}: MenuProps ) {
             <Link href="/work/remember-kramer">
                 <li className={styles.project}>Remember Kramer? From Seinfeld?</li>
             </Link>
-            <Link href="/work/bette-rman-screenplay">
+            <Link href="/work/better-man-screenplay">
                 <li className={styles.project}>Better Man Screenplay</li>
             </Link>
         </ul>
