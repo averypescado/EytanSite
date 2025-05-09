@@ -1,4 +1,4 @@
-import Periodical from "@/app/components/period"
+import Periodical from "@/app/components/Periodicals"
 
 
 export default function per() {

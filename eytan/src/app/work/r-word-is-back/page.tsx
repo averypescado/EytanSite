@@ -1,10 +1,10 @@
-import HoopDreamsD from "@/app/components/hd3"
+import RWord from "@/app/components/RWord";
 
 
 export default function hoop() {
     return (
         <div>
-            <HoopDreamsD />
+            <RWord />
         </div>
     )
 }

@@ -1,10 +1,10 @@
-import Standup from "@/app/components/stand"
+import Bronsons from "@/app/components/Bronsons"
 
 
 export default function hoop() {
     return (
         <div>
-            <Standup />
+            <Bronsons />
         </div>
     )
 }

@@ -1,10 +1,10 @@
-import RWord from "@/app/components/rw";
+import Standup from "@/app/components/Standup"
 
 
 export default function hoop() {
     return (
         <div>
-            <RWord />
+            <Standup />
         </div>
     )
 }
