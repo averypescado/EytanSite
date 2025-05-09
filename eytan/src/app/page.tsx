@@ -10,7 +10,7 @@ export default function Home() {
       <h1 className={styles.name}>Eytan Raul Boclin</h1>
       
       <div className={styles.buttonWrapper}>
-        <Link href="/work/hoopdreams2">
+        <Link href="/work/HoopDreams2">
           <button className={styles.button}>
             You only got one choice
           </button>
