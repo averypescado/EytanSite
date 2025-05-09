@@ -1,4 +1,4 @@
-import Argentina from "@/app/components/Argentina"
+import Argentina from "@/app/components/argentina"
 
 export default function per() {
     return (
