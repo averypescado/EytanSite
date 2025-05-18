@@ -1,6 +1,7 @@
 import styles from '../page.module.css';
 import React from 'react';
 
+
 export default function HoopDreams2()
 {
     return (
@@ -10,18 +11,15 @@ export default function HoopDreams2()
 
         </div>
             <div className={styles.videoContainer}>
-            <div className={styles['video-container']}>
-        <iframe 
-            className={styles.videoframe}
-            src="https://player.vimeo.com/video/448416507?color=000000&title=0&byline=0&portrait=0&speed=0&pip=0&share=0&collections=0"
-            title="Vimeo video player"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            allowFullScreen
-        />
-    </div>
+                <iframe 
+                    className={styles.videoframe}
+                    src="https://www.youtube.com/embed/hTXW1R2XAbo?si=-n_e9K_Ov4Ue0LjE&controls=0&modestbranding=1&rel=0&showinfo=0" 
+                    title="YouTube video player"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowFullScreen
+                />
             </div>
-        <div>
-        </div> 
+    
     </div>
     )
 
