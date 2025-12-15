@@ -9,6 +9,8 @@ interface MenuProps {
 export default function Menu({ className}: MenuProps ) {
     return (
         <ul className={`${styles.list} ${className || ''}`}> 
+
+
             <Link href="/work/hoop-dreams-2">
                 <li className={styles.project}>
                     Hoop Dreams 2
@@ -16,6 +18,9 @@ export default function Menu({ className}: MenuProps ) {
             </Link>
             <Link href="/work/hoop-dreams-3d">
                 <li className={styles.project}>Hoop Dreams 3D</li>
+            </Link>
+            <Link href="/work/public-safety">
+                <li className={styles.project}>Public Safety</li>
             </Link>
 
             <Link href="/work/the-toyota-problem">
